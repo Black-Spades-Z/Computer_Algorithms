@@ -15,7 +15,8 @@ def masters_theorem():
 
     print(f'T(n) = {a}*T(n/{b}) + O(n^{k}*log^{p}(n)')
 
-    if a >= 1 and b > 1 and k >= 0 :
+    if a >= 1 and b > 1 and k >= 0 \
+            :
         if a > pow(b, k):
             print('Case 1')
             print(f'T(n) = O(n^(log({b},{a})')
